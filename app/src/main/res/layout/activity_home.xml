@@ -9,57 +9,65 @@
 
     <Button
         android:id="@+id/starterBtn"
-        android:layout_width="413dp"
-        android:layout_height="62dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="222dp"
         android:backgroundTint="#77435FB1"
         android:text="Entrees"
         android:textAllCaps="false"
         android:textColor="#7A2104"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/mainDishBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Title"
-        app:layout_constraintVertical_bias="0.224" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/Title"
-        android:layout_width="480dp"
-        android:layout_height="136dp"
+        android:layout_width="413dp"
+        android:layout_height="138dp"
         android:src="@drawable/realfood"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-35dp" />
-
-    <ImageView
-        android:id="@+id/wallpaper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha=".25"
-        android:src="@drawable/wallpaperfood"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/mainDishBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="347dp"
         android:text="Plats principaux"
-        app:layout_constraintBottom_toTopOf="@+id/desertBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/desertBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="212dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="471dp"
         android:text="Desserts"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/wallpaper"
-        app:layout_constraintStart_toStartOf="@+id/wallpaper" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="5"
+            tools:listitem="@layout/card_view_design" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

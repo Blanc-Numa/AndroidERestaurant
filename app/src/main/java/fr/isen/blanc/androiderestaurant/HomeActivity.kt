@@ -3,10 +3,8 @@ package fr.isen.blanc.androiderestaurant
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import fr.isen.blanc.androiderestaurant.databinding.ActivityHomeBinding
-
 
 class HomeActivity : AppCompatActivity() {
 
@@ -18,9 +16,6 @@ class HomeActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val starterBtn =findViewById<Button>(R.id.starterBtn)
-        val mainDishesBtn =findViewById<Button>(R.id.mainDishBtn)
-        val desertBtn =findViewById<Button>(R.id.desertBtn)
 
         binding.starterBtn.setOnClickListener {
 
@@ -32,9 +27,6 @@ class HomeActivity : AppCompatActivity() {
 
         }
 
-
-
-
         binding.desertBtn.setOnClickListener {
             changeActivity(getString(R.string.home_desserts))
         }
@@ -44,10 +36,18 @@ class HomeActivity : AppCompatActivity() {
     private fun changeActivity( category: String) {
         val intent = Intent(this, DishActivity::class.java)
         intent.putExtra("category_type",category)
-        Log.i("info","End of HomeActivity")
         startActivity(intent)
     }
 
+    override fun onStop(){
+        super.onStop()
+        Log.d("HomeActivity", "vous stoppez la page home")
+    }
+
+    override fun onDestroy(){
+        super.onDestroy()
+        Log.d("HomeActivity", "vous quittez la page home")
+    }
 
 }
 

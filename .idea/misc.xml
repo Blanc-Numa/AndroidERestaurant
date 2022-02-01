@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_desert.xml" value="0.2875" />
-        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_dish.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_dish.xml" value="0.22" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_main.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_main_dish.xml" value="0.2875" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_starter.xml" value="0.25" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/card_view_design.xml" value="0.25" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_blank.xml" value="0.2734375" />
       </map>
     </option>
