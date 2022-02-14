@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidERestaurant</string>
+    <string name="app_name">RestoDeNuma</string>
     <string name="home_starters">Entrées</string>
     <string name="home_dishes">Plats principaux</string>
     <string name="home_desserts">Desserts</string>
