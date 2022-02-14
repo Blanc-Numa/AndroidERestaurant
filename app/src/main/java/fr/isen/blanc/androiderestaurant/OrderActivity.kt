@@ -1,13 +1,13 @@
 package fr.isen.blanc.androiderestaurant
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.DefaultRetryPolicy
+import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.android.volley.Request
 import com.google.gson.Gson
 import fr.isen.blanc.androiderestaurant.model.UserModel
 import org.json.JSONObject
@@ -50,5 +50,4 @@ class OrderActivity : AppCompatActivity() {
         // Add the volley post request to the request queue
         queue.add(request)
     }
-}
 }
