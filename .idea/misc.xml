@@ -3,15 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/drawable/pastille.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_base.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_basket.xml" value="0.25" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_desert.xml" value="0.2875" />
-        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_detail.xml" value="0.33" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_dish.xml" value="0.22" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_login.xml" value="0.21467391304347827" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_main.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_main_dish.xml" value="0.2875" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_menu.xml" value="0.22056159420289856" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_selected_category.xml" value="0.2558876811594203" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_starter.xml" value="0.25" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/basket_adapter_design.xml" value="0.23641304347826086" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/basket_cell.xml" value="0.23641304347826086" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/card_view_design.xml" value="0.25" />
         <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_blank.xml" value="0.2734375" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_dish_picture.xml" value="0.1" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/quantity_basket.xml" value="0.33" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/view_basket.xml" value="0.23641304347826086" />
+        <entry key="..\:/Users/numab/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/menu/menu.xml" value="0.2875" />
       </map>
     </option>
   </component>

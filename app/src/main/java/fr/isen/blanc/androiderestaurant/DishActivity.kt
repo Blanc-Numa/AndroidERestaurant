@@ -3,7 +3,6 @@ package fr.isen.blanc.androiderestaurant
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
@@ -12,11 +11,10 @@ import com.google.gson.Gson
 import fr.isen.blanc.androiderestaurant.databinding.ActivityDishBinding
 import org.json.JSONObject
 
-class DishActivity : AppCompatActivity() {
+class DishActivity : MenuActivity() {
     private lateinit var binding: ActivityDishBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityDishBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val categoryType = intent.getStringExtra("category_type") ?:""
@@ -31,8 +29,14 @@ class DishActivity : AppCompatActivity() {
         jsonObject.put("id_shop", "1")
         val jsonRequest = JsonObjectRequest(
             Request.Method.POST, url, jsonObject, { response ->
-                val dishResult= Gson().fromJson(response.toString(), DishResult::class.java )
-                displayDishes(dishResult.data.firstOrNull{it.name_fr == Category}?.items ?: listOf())
+                var gson= Gson()
+                var dishResult = gson.fromJson(response.toString(), DishResultModel::class.java)
+
+                when (binding.mainDishTitle.text){
+                    "Entrées" -> displayDishes(dishResult.data[0].items)
+                    "Plats principaux" -> displayDishes(dishResult.data[1].items)
+                    "Desserts" -> displayDishes(dishResult.data[2].items)
+                }
             }, {
                 Log.e("DishActivity", "erreur lors de la récupération de la liste des plats")
             })

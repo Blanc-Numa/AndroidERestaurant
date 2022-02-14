@@ -3,5 +3,29 @@
     <string name="home_starters">Entrées</string>
     <string name="home_dishes">Plats principaux</string>
     <string name="home_desserts">Desserts</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password">Password</string>
+    <string name="dishLessButton">-</string>
+    <string name="dishMoreButton">+</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="login">Se connecter</string>
+    <string name="adress">Adresse</string>
+    <string name="name">Nom</string>
+    <string name="email">Email</string>
+    <!-- Shared Preferences -->
+    <string name="app_prefs">SharedPreferences</string>
+    <string name="basket_count">totalBasketQuantity</string>
+    <string name="spTotalPrice">totalBasketPrice</string>
+    <string name="spUserId">userId</string>
+
+    <!-- BasketActivity -->
+    <string name="basketTitle">Votre panier</string>
+    <string name="basketButtonBuy">Passer la commande</string>
+    <string name="basketIconDeleteContentDescription">Button de suppression d\'un item</string>
+    <string name="basketButtonDeleteAllContentDescription">Button de suppression de tout le panier</string>
+    <string name="basketDeleteAllTxt">Votre panier a été supprimé</string>
+    <string name="quantity">Quantité : </string>
+    <string name="basketTotalQuantity">Quantité totale : </string>
+    <string name="totalPrice">Total : </string>
+
+
 </resources>

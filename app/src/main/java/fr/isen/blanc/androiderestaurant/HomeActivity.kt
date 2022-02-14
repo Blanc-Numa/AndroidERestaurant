@@ -3,10 +3,10 @@ package fr.isen.blanc.androiderestaurant
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import fr.isen.blanc.androiderestaurant.databinding.ActivityHomeBinding
+import fr.isen.blanc.androiderestaurant.databinding.ActivityRegisterBinding
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : MenuActivity() {
 
     private lateinit var binding : ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +14,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         val view = binding.root
+        val change = Intent(this, ActivityRegisterBinding::class.java)
         setContentView(view)
 
 
@@ -29,6 +30,9 @@ class HomeActivity : AppCompatActivity() {
 
         binding.desertBtn.setOnClickListener {
             changeActivity(getString(R.string.home_desserts))
+        }
+
+        binding.RegisterButton.setOnClickListener{
         }
 
 
