@@ -20,7 +20,7 @@ class BasketActivity : MenuActivity() {
         binding = ActivityBasketBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val file = File(cacheDir.absolutePath + "/basket.json")
+        var file = File(cacheDir.absolutePath + "/inBacket.json")
 
         if (file.exists()) {
             val dishModel = GsonBuilder().create().fromJson(file.readText(), Basket::class.java)
@@ -68,7 +68,7 @@ class BasketActivity : MenuActivity() {
     }
 
     private fun deleteBasketData() {
-        File(cacheDir.absolutePath + "/basket.json").delete()
+        File(cacheDir.absolutePath + "/inBacket.json").delete()
         this.getSharedPreferences(getString(R.string.app_prefs), Context.MODE_PRIVATE).edit().remove(getString(R.string.spTotalPrice)).apply()
         this.getSharedPreferences(getString(R.string.app_prefs), Context.MODE_PRIVATE).edit().remove(getString(R.string.basket_count)).apply()
         Toast.makeText(this, getString(R.string.basketDeleteAllTxt), Toast.LENGTH_SHORT).show()

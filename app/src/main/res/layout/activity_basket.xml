@@ -22,39 +22,36 @@
         tools:ignore="TextContrastCheck" />
 
     <androidx.recyclerview.widget.RecyclerView
-        tools:listitem="@layout/view_basket"
         android:id="@+id/basketList"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/basketTotalQuantity"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/basketTitle"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:itemCount="5"
+        tools:listitem="@layout/view_basket" />
 
     <TextView
         android:id="@+id/basketTotalQuantity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/basketTotalPrice"
+        app:layout_constraintBottom_toTopOf="@+id/basketButtonBuy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basketList" />
     <TextView
         android:id="@+id/basketTotalPrice"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/basketButtonBuy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basketTotalQuantity" />
 
     <Button
         android:id="@+id/basketButtonBuy"

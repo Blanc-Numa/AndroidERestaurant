@@ -32,9 +32,6 @@ class HomeActivity : MenuActivity() {
             changeActivity(getString(R.string.home_desserts))
         }
 
-        binding.RegisterButton.setOnClickListener{
-        }
-
 
     }
     private fun changeActivity( category: String) {
